@@ -1,0 +1,84 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<artifactId>SeleniumRevision</artifactId>
+
+	<build>
+		<plugins>
+
+        <!-- Maven Surefire Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.5</version>
+
+            <configuration>
+                <!-- 👇 TestNG XML path -->
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+
+        </plugin>
+
+    </plugins>
+	</build>
+
+	<dependencies>
+		<!--
+    https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<artifactId>selenium-java</artifactId>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<version>4.39.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<artifactId>testng</artifactId>
+			<groupId>org.testng</groupId>
+			<scope>test</scope>
+			<version>7.11.0</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<artifactId>log4j-core</artifactId>
+			<groupId>org.apache.logging.log4j</groupId>
+			<version>2.25.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<artifactId>poi-ooxml</artifactId>
+			<groupId>org.apache.poi</groupId>
+			<version>5.5.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+			
+		</dependency>
+
+	</dependencies>
+
+
+	<groupId>SeleniumRevision</groupId>
+	<modelVersion>4.0.0</modelVersion>
+	<name>SeleniumRevision</name>
+
+	<packaging>jar</packaging>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<url>http://maven.apache.org</url>
+
+	<version>0.0.1-SNAPSHOT</version>
+</project>

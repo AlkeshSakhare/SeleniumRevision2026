@@ -1,0 +1,16 @@
+# TestNG / Extent Reports
+test-output/
+extent-report/
+screenshots/
+target/
+
+# Logs
+*.log
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store

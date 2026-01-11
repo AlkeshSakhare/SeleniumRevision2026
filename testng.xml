@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- suite name="Automation Suite" parallel="methods" thread-count="2" -->
+<suite name="Automation Suite">
+
+
+    <listeners>
+        <listener class-name="com.qa.listners.ExtentTestNGListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.qa.pagetestcases.LoginPageTest"/>
+        </classes>
+    </test>
+</suite>
